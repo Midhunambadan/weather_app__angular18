@@ -3,6 +3,7 @@ import { HomeComponent } from './core/pages/home/home.component';
 import { LoginComponent } from './core/pages/login/login.component';
 import { AboutComponent } from './core/pages/about/about.component';
 import { NewsComponent } from './core/pages/news/news.component';
+import { SignupComponent } from './core/pages/signup/signup.component';
 
 export const routes: Routes = [
     {
@@ -17,6 +18,10 @@ export const routes: Routes = [
     {
         path:'login',
         component:LoginComponent,
+    },
+    {
+        path:'signup',
+        component:SignupComponent
     },
     {
         path:'about',

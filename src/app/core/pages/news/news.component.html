@@ -1,1 +1,12 @@
-<p>news works!</p>
+<div class="news-container">
+    <div class="news-card" *ngFor="let article of newsData">
+      <h2>{{ article.title }}</h2>
+      <img [src]="article.urlToImage" alt="News Image" class="news-image" />
+      <p><strong>Author:</strong> {{ article.author }}</p>
+      <p><strong>Source:</strong> {{ article.source.name }}</p>
+      <p><strong>Published:</strong> {{ article.publishedAt | date:'medium' }}</p>
+      <p>{{ article.description }}</p>
+      <a [href]="article.url" target="_blank">Read more</a>
+    </div>
+  </div>
+  
