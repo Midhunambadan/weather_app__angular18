@@ -1,0 +1,53 @@
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Waether</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              [routerLink]="['/home']"
+              routerLinkActive="router-link-active"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item"><a  class="nav-link active" routerLink="/news" routerLinkActive="router-link-active">News</a></li>
+
+          <li class="nav-item"><a  class="nav-link active" routerLink="/about" routerLinkActive="router-link-active">About</a></li>
+        </ul>
+        <ul class="navbar-nav d-flex flex-row">
+          <!-- Login -->
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" [routerLink]="['/login']"
+            routerLinkActive="router-link-active">Login</a>
+          </li>
+          <!-- Signup -->
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="#">Signup</a>
+          </li>
+
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+</header>
