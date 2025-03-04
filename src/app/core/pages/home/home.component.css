@@ -1,4 +1,4 @@
-.weather-container {
+/* .weather-container {
     max-width: 500px;
     margin: 50px auto;
     padding: 20px;
@@ -55,4 +55,33 @@
   
   h2 {
     margin: 10px 0;
+  } */
+
+
+  .weather-icon {
+    width: 100px;
+    height: 100px;
   }
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+  h2, h3 {
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+
+  /* Ensure main content does not overlap with header */
+
+
+
+.container {
+  margin-top: 100px; /* Add space below the navbar */
+  padding: 20px;
+}
+
+  

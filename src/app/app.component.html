@@ -1,15 +1,15 @@
+<app-header></app-header>
 
-<app-home></app-home>
-
-<section>
+<section style="margin-top: 80px;"> <!-- Added margin-top to push content down -->
   <div
-    id="intro"
     style="
+      background-color: rgb(255, 255, 255);
       height: 50vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding-top: 20px; /* Increased padding to avoid overlap */
     ">
-  <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
   </div>
 </section>
